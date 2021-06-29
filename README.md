@@ -21,7 +21,7 @@ $ npm install --save csharp-models-to-typescript
 
 1. Add a config file to your project that contains for example...
 
-```
+```json
 {
     "include": [
         "./models/**/*.cs",
@@ -44,7 +44,8 @@ $ npm install --save csharp-models-to-typescript
     "customTypeTranslations": {
         "ProductName": "string",
         "ProductNumber": "string"
-    }
+    },
+    "exportedModule": false
 }
 ```
 

@@ -37,7 +37,8 @@ const converter = createConverter({
     camelCaseOptions: config.camelCaseOptions || {},
     camelCaseEnums: config.camelCaseEnums || false,
     numericEnums: config.numericEnums || false,
-    stringLiteralTypesInsteadOfEnums: config.stringLiteralTypesInsteadOfEnums || false
+    stringLiteralTypesInsteadOfEnums: config.stringLiteralTypesInsteadOfEnums || false,
+    exportedModule: config.exportedModule || false
 });
 
 let timer = process.hrtime();

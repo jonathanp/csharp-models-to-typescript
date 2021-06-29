@@ -47,7 +47,7 @@ const createConverter = config => {
 
         if (config.namespace) {
             return [
-                `declare module ${config.namespace} {`,
+                `${config.exportedModule ? 'export' : 'declare'} module ${config.namespace} {`,
                 ...filteredContent,
                 '}',
             ].join('\n');
